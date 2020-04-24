@@ -28,11 +28,11 @@ def main():
 
         while len(arrayMail) < 31: 
 
-            arrayMail.append(generate_random_emails())
+            arrayMail.append(generate_random_emails().upper())
 
         searchForMail = input('Check if your email password has been disclosed: ')
 
-        if searchForMail in arrayMail:
+        if searchForMail.upper() in arrayMail:
             print('Change your password right now!')
         
         else:
